@@ -1,0 +1,25 @@
+{
+  "device": {
+    "id": "",
+    "type": "MOBILE"
+  },
+  "channel": {
+    "name": "MOB",
+    "type": "RETAIL_MOBILE",
+    "version": "9D01",
+    "device_identifier": "RESPONSIVE_WEB",
+    "is_responsive": "true"
+  },
+  "external_reference_no": "1",
+  "locale": {
+    "country_code": "US",
+    "language_code": "en"
+  },
+  "security": {
+    "black_box_data": null,
+    "digital": {
+      "sessionid": ""
+    }
+  },
+  "bashPath": "/us/en"
+}

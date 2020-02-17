@@ -1,0 +1,250 @@
+code2,code3,currency_code,name
+AF,AFG,AFN,Afghanistan
+BZ,BLZ,BZD,Belize
+BE,BEL,EUR,Belgium
+BY,BLR,BYN,Belarus
+BB,BRB,BBD,Barbados
+BD,BGD,BDT,Bangladesh
+BH,BHR,BHD,Bahrain
+RU,RUS,RUB,Russian Federation (the)
+TT,TTO,TTD,Trinidad and Tobago
+TO,TON,TOP,Tonga
+TK,TKL,NZD,Tokelau
+TG,TGO,XOF,Togo
+TL,TLS,USD,Timor-Leste
+TH,THA,THB,Thailand
+TZ,TZA,TZS,"Tanzania, the United Republic of"
+ZW,ZWE,,Zimbabwe
+ZM,ZMB,ZMW,Zambia
+YE,YEM,YER,Yemen
+EH,ESH,,Western Sahara
+WF,WLF,XPF,Wallis and Futuna
+VI,VIR,USD,Virgin Islands (U.S.)
+VG,VGB,USD,Virgin Islands (British)
+VN,VNM,VND,Viet Nam
+VE,VEN,VES,Venezuela (Bolivarian Republic of)
+VU,VUT,VUV,Vanuatu
+UZ,UZB,UZS,Uzbekistan
+UY,URY,UYU,Uruguay
+US,USA,USD,United States of America (the)
+UM,UMI,USD,United States Minor Outlying Islands (the)
+GB,GBR,GBP,United Kingdom of Great Britain and Northern Ireland (the)
+AE,ARE,AED,United Arab Emirates (the)
+UA,UKR,UAH,Ukraine
+UG,UGA,UGX,Uganda
+TV,TUV,AUD,Tuvalu
+TC,TCA,USD,Turks and Caicos Islands (the)
+TM,TKM,TMT,Turkmenistan
+TR,TUR,TRY,Turkey
+TN,TUN,TND,Tunisia
+TJ,TJK,TJS,Tajikistan
+TW,TWN,TWD,Taiwan (Province of China)
+SY,SYR,SYP,Syrian Arab Republic (the)
+CH,CHE,CHF,Switzerland
+SE,SWE,SEK,Sweden
+SJ,SJM,NOK,Svalbard
+SR,SUR,SRD,Suriname
+SD,SDN,SDG,Sudan (the)
+LK,LKA,LKR,Sri Lanka
+ES,ESP,EUR,Spain
+SS,SSD,SSP,South Sudan
+GS,SGS,FKP,South Georgia and the South Sandwich Islands
+ZA,ZAF,ZAR,South Africa
+SO,SOM,SOS,Somalia
+SB,SLB,SBD,Solomon Islands
+SI,SVN,EUR,Slovenia
+SK,SVK,EUR,Slovakia
+SX,SXM,ANG,Sint Maarten (Dutch part)
+SG,SGP,SGD,Singapore
+SL,SLE,SLL,Sierra Leone
+SC,SYC,SCR,Seychelles
+RS,SRB,RSD,Serbia
+SN,SEN,XOF,Senegal
+SA,SAU,SAR,Saudi Arabia
+ST,STP,STN,Sao Tome and Principe
+SM,SMR,EUR,San Marino
+WS,WSM,WST,Samoa
+VC,VCT,XCD,Saint Vincent and the Grenadines
+PM,SPM,,Saint Pierre and Miquelon
+MF,MAF,EUR,Saint Martin (French part)
+LC,LCA,XCD,Saint Lucia
+KN,KNA,XCD,Saint Kitts and Nevis
+SH,SHN,,Saint Helena
+BL,BLM,EUR,Saint Barthélemy
+RW,RWA,RWF,Rwanda
+RO,ROU,RON,Romania
+RE,REU,,Réunion
+QA,QAT,QAR,Qatar
+PR,PRI,USD,Puerto Rico
+PT,PRT,EUR,Portugal
+PL,POL,PLN,Poland
+PN,PCN,NZD,Pitcairn
+PH,PHL,PHP,Philippines (the)
+PE,PER,PEN,Peru
+PY,PRY,PYG,Paraguay
+PG,PNG,PGK,Papua New Guinea
+PA,PAN,PAB,Panama
+PS,PSE,EGP,"Palestine, State of"
+PW,PLW,USD,Palau
+PK,PAK,PKR,Pakistan
+OM,OMN,OMR,Oman
+NO,NOR,NOK,Norway
+MP,MNP,USD,Northern Mariana Islands (the)
+NF,NFK,AUD,Norfolk Island
+NU,NIU,NZD,Niue
+NG,NGA,NGN,Nigeria
+NE,NER,XOF,Niger (the)
+NI,NIC,NIO,Nicaragua
+NZ,NZL,NZD,New Zealand
+NC,NCL,XPF,New Caledonia
+NL,NLD,EUR,Netherlands (the)
+NP,NPL,NPR,Nepal
+NR,NRU,AUD,Nauru
+NA,NAM,,Namibia
+MM,MMR,MMK,Myanmar
+MZ,MOZ,MZN,Mozambique
+MA,MAR,MAD,Morocco
+MS,MSR,XCD,Montserrat
+ME,MNE,EUR,Montenegro
+MN,MNG,MNT,Mongolia
+MC,MCO,EUR,Monaco
+MD,MDA,MDL,Moldova (the Republic of)
+FM,FSM,USD,Micronesia (Federated States of)
+MX,MEX,MXN,Mexico
+YT,MYT,,Mayotte
+MU,MUS,MUR,Mauritius
+MR,MRT,MRU,Mauritania
+MQ,MTQ,,Martinique
+MH,MHL,USD,Marshall Islands (the)
+MT,MLT,EUR,Malta
+ML,MLI,XOF,Mali
+MV,MDV,MVR,Maldives
+MY,MYS,MYR,Malaysia
+MW,MWI,MWK,Malawi
+MG,MDG,MGA,Madagascar
+MK,MKD,MKD,North Macedonia
+MO,MAC,MOP,Macao
+LU,LUX,EUR,Luxembourg
+LT,LTU,EUR,Lithuania
+LI,LIE,CHF,Liechtenstein
+LY,LBY,LYD,Libya
+LR,LBR,LRD,Liberia
+LS,LSO,,Lesotho
+LB,LBN,LBP,Lebanon
+LV,LVA,EUR,Latvia
+LA,LAO,LAK,Lao People's Democratic Republic (the)
+KG,KGZ,KGS,Kyrgyzstan
+KW,KWT,KWD,Kuwait
+KR,KOR,KRW,Korea (the Republic of)
+KP,PRK,KPW,Korea (the Democratic People's Republic of)
+KI,KIR,AUD,Kiribati
+KE,KEN,KES,Kenya
+KZ,KAZ,KZT,Kazakhstan
+JO,JOR,JOD,Jordan
+JE,JEY,GBP,Jersey
+JP,JPN,JPY,Japan
+JM,JAM,JMD,Jamaica
+IT,ITA,EUR,Italy
+IL,ISR,ILS,Israel
+IM,IMN,GBP,Isle of Man
+IE,IRL,EUR,Ireland
+IQ,IRQ,IQD,Iraq
+IR,IRN,IRR,Iran (Islamic Republic of)
+ID,IDN,IDR,Indonesia
+IN,IND,INR,India
+IS,ISL,ISK,Iceland
+HU,HUN,HUF,Hungary
+HK,HKG,HKD,Hong Kong
+HN,HND,HNL,Honduras
+VA,VAT,,Holy See (the)
+HM,HMD,,Heard Island and McDonald Islands
+HT,HTI,HTG,Haiti
+GY,GUY,GYD,Guyana
+GW,GNB,XOF,Guinea-Bissau
+GN,GIN,GNF,Guinea
+GG,GGY,GBP,Guernsey
+GT,GTM,GTQ,Guatemala
+GU,GUM,USD,Guam
+GP,GLP,,Guadeloupe
+GD,GRD,XCD,Grenada
+GL,GRL,DKK,Greenland
+GR,GRC,EUR,Greece
+GI,GIB,GIP,Gibraltar
+GH,GHA,GHS,Ghana
+DE,DEU,EUR,Germany
+GE,GEO,GEL,Georgia
+GM,GMB,GMD,Gambia (the)
+GA,GAB,XAF,Gabon
+TF,ATF,EUR,French Southern Territories (the)
+PF,PYF,XPF,French Polynesia
+GF,GUF,,French Guiana
+FR,FRA,EUR,France
+FI,FIN,EUR,Finland
+FJ,FJI,FJD,Fiji
+FO,FRO,DKK,Faroe Islands (the)
+FK,FLK,FKP,Falkland Islands (the) [Malvinas]
+ET,ETH,ETB,Ethiopia
+SZ,SWZ,,Eswatini
+EE,EST,EUR,Estonia
+ER,ERI,ERN,Eritrea
+GQ,GNQ,XAF,Equatorial Guinea
+SV,SLV,USD,El Salvador
+EG,EGY,EGP,Egypt
+EC,ECU,USD,Ecuador
+DO,DOM,DOP,Dominican Republic (the)
+DM,DMA,XCD,Dominica
+DJ,DJI,DJF,Djibouti
+DK,DNK,DKK,Denmark
+CZ,CZE,CZK,Czechia
+CY,CYP,EUR,Cyprus
+CW,CUW,ANG,Curaçao
+CU,CUB,CUP,Cuba
+HR,HRV,HRK,Croatia
+CI,CIV,XOF,Côte d'Ivoire
+CR,CRI,CRC,Costa Rica
+CK,COK,NZD,Cook Islands (the)
+CG,COG,XAF,Congo (the)
+CD,COD,CDF,Congo (the Democratic Republic of the)
+KM,COM,KMF,Comoros (the)
+CO,COL,COP,Colombia
+CC,CCK,AUD,Cocos (Keeling) Islands (the)
+CX,CXR,AUD,Christmas Island
+CN,CHN,CNY,China
+CL,CHL,CLP,Chile
+TD,TCD,XAF,Chad
+CF,CAF,XAF,Central African Republic (the)
+KY,CYM,KYD,Cayman Islands (the)
+CA,CAN,CAD,Canada
+CM,CMR,XAF,Cameroon
+KH,KHM,KHR,Cambodia
+CV,CPV,CVE,Cabo Verde
+BI,BDI,BIF,Burundi
+BF,BFA,XOF,Burkina Faso
+BG,BGR,BGN,Bulgaria
+BN,BRN,BND,Brunei Darussalam
+IO,IOT,USD,British Indian Ocean Territory (the)
+BR,BRA,BRL,Brazil
+BV,BVT,,Bouvet Island
+BW,BWA,BWP,Botswana
+BA,BIH,BAM,Bosnia and Herzegovina
+BQ,BES,USD,Bonaire
+BO,BOL,BOB,Bolivia (Plurinational State of)
+BT,BTN,BTN,Bhutan
+BM,BMU,BMD,Bermuda
+BJ,BEN,XOF,Benin
+BS,BHS,BSD,Bahamas (the)
+AZ,AZE,AZN,Azerbaijan
+AT,AUT,EUR,Austria
+AU,AUS,AUD,Australia
+AW,ABW,AWG,Aruba
+AM,ARM,AMD,Armenia
+AR,ARG,ARS,Argentina
+AG,ATG,XCD,Antigua and Barbuda
+AQ,ATA,,Antarctica
+AI,AIA,XCD,Anguilla
+AO,AGO,AOA,Angola
+AD,AND,EUR,Andorra
+AS,ASM,USD,American Samoa
+DZ,DZA,DZD,Algeria
+AL,ALB,ALL,Albania
+AX,ALA,EUR,Åland Islands

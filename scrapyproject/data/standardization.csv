@@ -1,0 +1,200 @@
+scraper,field,old_value,new_value
+azimo,funds_in,Debit & Credit Card,Debit/Credit Card
+azimo,funds_out,SWIFT,Swift
+azimo,funds_out,CASH_PICK_UP,Cash Pick-Up
+azimo,funds_out,BANK_DEPOSIT,Bank Deposit
+azimo,funds_out,MOBILE_WALLET,Mobile Wallet
+azimo,funds_out,PHYSICAL_DELIVERY,Cash Delivery
+azimo,speed,24 hours,Within 1 day
+azimo,speed,1 hour,Within 1 day
+azimo,speed,Within 24 hours,Within 1 day
+azimo,speed,1-2 days,Within 2 days
+azimo,speed,1-3 working days,Within 3 days
+azimo,speed,1-2 working days,Within 2 days
+azimo,speed,Same day,Within 1 day
+azimo,speed,Instant,Within 1 day
+azimo,speed,2 days,Within 2 days
+azimo,speed,Usually under 30 minutes,Within 1 day
+azimo,speed,2 hours,Within 1 day
+azimo,speed,Within 48 hours,Within 2 days
+azimo,speed,Next day,Within 2 days
+azimo,speed,2 часа,Within 1 day
+azimo,speed,В течение 48 часов,Within 2 days
+azimo,speed,Within 2 hours,Within 1 day
+azimo,speed,Мгновенно,Within 1 day
+azimo,speed,Обычно менее 30 минут,Within 1 day
+azimo,speed,24 часа,Within 1 day
+azimo,speed,1–2 рабочих дня,Within 2 days
+azimo,speed,На следующий день,Within 2 days
+azimo,speed,Instantly,Within 1 day
+azimo,speed,2 дня,Within 2 days
+azimo,speed,В течение 24 часов,Within 1 day
+azimo,speed,1-2 дня,Within 2 days
+azimo,speed,Within 30 minutes,Within 1 day
+azimo,speed,Within 1 hour,Within 1 day
+azimo,speed,1–3 рабочих дня,Within 3 days
+azimo,speed,1 час,Within 1 day
+azimo,speed,День в день,Within 1 day
+instarem,funds_in,Wire transfer,Bank Transfer
+instarem,funds_in,Bank Transfer,Bank Transfer
+instarem,funds_in,Debit Card,Debit Card
+instarem,funds_in,ACH/Direct Debit,Direct Debit
+instarem,funds_in,Set up InstaReM as ‘Payee’,InstaRem
+instarem,funds_in,INTERAC e-Transfer,INTERAC e-Transfer
+instarem,funds_in,POLI Transfer,POLi Transfer
+instarem,funds_in,BPay,BPay
+instarem,funds_out,Bank Deposit,Bank Deposit
+instarem,speed,1-2 business days,Within 2 days
+moneygram,funds_in,Online Bank Account,Bank Transfer
+moneygram,funds_in,Debit/Credit Card,Debit/Credit Card
+moneygram,funds_in,Sofort,Bank Transfer
+moneygram,funds_in,Interac,Bank Transfer
+moneygram,funds_in,Bpay,Bank Transfer
+moneygram,funds_out,Cash Pickup,Cash Pick-Up
+moneygram,funds_out,Home Delivery,Cash Delivery
+moneygram,funds_out,Direct to Bank Account,Bank Deposit
+moneygram,funds_out,Mobile Wallet,Mobile Wallet
+moneygram,funds_out,Other,Other
+moneygram,speed,The money is typically available for pickup in minutes.,Within 1 day
+moneygram,speed,Within minutes,Within 1 day
+orbitremit,funds_in,Bank Transfer,Bank Transfer
+orbitremit,funds_in,POLi,POLi Transfer
+orbitremit,funds_out,bank_account,Bank Deposit
+orbitremit,speed,24 hours,Within 1 day
+remit2india,funds_in,Instant Transfers,Bank Transfer (Express)
+remit2india,funds_in,Net Banking Express Transfer,Bank Transfer (Express)
+remit2india,funds_in,Wire Transfer,Bank Transfer
+remit2india,funds_in,NetBanking Transfer,Bank Transfer
+remit2india,funds_in,Online Transfer,Bank Transfer
+remit2india,funds_in,Net Banking Indicative Rate,Bank Transfer
+remit2india,funds_in,Net Banking Guaranteed Transfer,Bank Transfer
+remit2india,funds_in,Debit Card,Debit Card
+remit2india,funds_in,ACH Transfer,Direct Debit
+remit2india,funds_in,Direct Debit,Direct Debit
+remit2india,funds_in,Bill Payment,Bill Payment
+remit2india,funds_in,Email Money Transfer,Email Money Transfer
+remit2india,funds_in,Direct Debit,Bank Transfer
+remit2india,funds_out,Direct Credit,Bank Deposit
+remit2india,speed,30+**minutes,Within 1 day
+remit2india,speed,1+ working day,Within 2 days
+remit2india,speed,1+ working day,Within 2 days
+remit2india,speed,1* working day,Within 1 day
+remit2india,speed,***Same day,Within 1 day
+remit2india,speed,Instant,Within 1 day
+remit2india,speed,Instantly,Within 1 day
+remit2india,speed,2+ working day,Within 3 days
+remit2india,speed,2+ working days,Within 3 days
+remit2india,speed,6* working days,Within 6 days
+remit2india,speed,Within 30 minutes,Within 1 day
+remitly,funds_in,DEBIT,Debit Card
+remitly,funds_in,BANK,Bank Transfer
+remitly,funds_out,BANK_DEPOSIT,Bank Deposit
+remitly,funds_out,CASH_PICKUP,Cash Pick-Up
+remitly,funds_out,DIRECT_TO_PHONE,Mobile Wallet
+remitly,funds_out,HOME_DELIVERY,Cash Delivery
+remitly,speed,EXPRESS,Within 1 day
+remitly,speed,Within 4 hours,Within 1 day
+ria,funds_in,DebitCard,Debit Card
+ria,funds_in,BankAccount,Bank Transfer
+ria,funds_in,PayNearMe,PayNearMe
+ria,funds_in,CreditCard,Credit Card
+ria,funds_out,BankDeposit,Bank Deposit
+ria,funds_out,HomeDelivery,Cash Delivery
+ria,funds_out,OfficePickup,Cash Delivery
+ria,speed,1-4 days,Within 4 days
+ria_australia,funds_in,Direct Bank Payment,Bank Transfer
+ria_australia,funds_in,Debit Card,Debit/Credit Card
+ria_australia,funds_in,Credit Card,Debit/Credit Card
+ria_australia,funds_out,Bank Deposit,Bank Deposit
+ria_australia,funds_out,Cash Pickup,Cash Pick-Up
+ria_australia,funds_out,Home Delivery,Cash Delivery
+ria_australia,speed,1-4 days,Within 4 days
+transfast,funds_in,Debit,Debit Card
+transfast,funds_in,Bank Account,Bank Transfer
+transfast,funds_in,Bank Account VALUE+,Bank Transfer
+transfast,funds_in,Debit VALUE+,Debit Card
+transfast,funds_in,Bank Account FASTRACK,Bank Transfer Express
+transfast,funds_in,Debit FASTRACK (Debit),Debit Card Express
+transfast,funds_out,CASH PICK UP,Cash Pick-Up
+transfast,funds_out,BANK DEPOSIT,Bank Deposit
+transfast,funds_out,DELIVERY,Cash Delivery
+transfast,funds_out,BILLS PAYMENT,Bills Payment
+transfast,funds_out,M-PESA,M-Pesa
+transfast,speed,In a few hours,Within 1 day
+transfast,speed,3-5 days,Within 5 days
+transfast,speed,Instant to 24 hrs,Within 1 day
+transfast,speed,3-5 business days,Within 5 days
+transfast,speed,Within hours,Within 1 day
+transferwise,funds_in,DIRECT_DEBIT,Direct Debit
+transferwise,funds_in,INTERNATIONAL_DEBIT,International Debit
+transferwise,funds_in,CREDIT,Credit Card
+transferwise,funds_in,DEBIT,Debit Card
+transferwise,funds_in,BANK_TRANSFER,Bank Transfer
+transferwise,funds_in,SWIFT,Swift
+transferwise,funds_in,IDEAL,Ideal
+transferwise,funds_in,TRUSTLY,Trustly
+transferwise,funds_in,SOFORT,Sofort
+transferwise,funds_in,BILL_PAYMENT,Bill Payment
+transferwise,funds_in,POLI,Poli Transfer
+transferwise,funds_out,BANK_TRANSFER,Bank Deposit
+transferwise,funds_out,SWIFT,Bank Deposit
+transferwise,speed,Within 30 minutes,Within 1 day
+transferwise,speed,Within 10 hours,Within 1 day
+transferwise,speed,Within 3 hours,Within 1 day
+transferwise,speed,Within 40 minutes,Within 1 day
+transferwise,speed,Within 4 hours,Within 1 day
+transferwise,speed,Within 12 hours,Within 1 day
+transferwise,speed,Within in 5 hours,Within 1 day
+transferwise,speed,Within 6 hours,Within 1 day
+transferwise,speed,Within 2 minutes,Within 1 day
+transferwise,speed,Within 11 hours,Within 1 day
+transferwise,speed,Within 60 minutes,Within 1 day
+transferwise,speed,Within 8 hours,Within 1 day
+transferwise,speed,Within in 9 hours,Within 1 day
+transferwise,speed,Within 30 minutes,Within 1 day
+transferwise,speed,Within seconds,Within 1 day
+transferwise,speed,Within 1 hour,Within 1 day
+wellsfargo,funds_in,Non Wells Fargo Bank Account,Bank Transfer
+wellsfargo,funds_in,Wells Fargo Bank Account,Bank Transfer
+wellsfargo,funds_out,Cash Pick-up,Cash Pick-up
+wellsfargo,funds_out,Credit to Account,Bank Deposit
+wellsfargo,speed,3-4 business days,Within 4 days
+wellsfargo,speed,2-3 business days,Within 3 days
+worldremit,funds_in,Debit / Credit Card,Debit/Credit Card
+worldremit,funds_in,Bank Transfer,Bank Transfer
+worldremit,funds_in,Online Bank Transfer,Bank Transfer
+worldremit,funds_in,Internet Banking,Bank Transfer
+worldremit,funds_in,Interac,INTERAC e-Transfer
+worldremit,funds_out,Bank Deposit,Bank Deposit
+worldremit,funds_out,Cash Pickup,Cash Pick-Up
+worldremit,speed,within_2_working_days,Within 2 days
+worldremit,speed,same_day,Within 1 day
+worldremit,speed,within_minutes,Within 1 day
+worldremit,speed,within_2_hours,Within 1 day
+worldremit,speed,within_3_working_days,Within 3 days
+worldremit,speed,within_1_hour,Within 1 day
+worldremit,speed,next_working_day,Within 2 days
+worldremit,speed,within_10_minutes,Within 1 day
+worldremit,speed,Within minutes,Within 1 day
+worldremit,speed,Within 2 hours,Within 1 day
+worldremit,speed,Within 1 hour,Within 1 day
+worldremit,speed,Within 10 minutes,Within 1 day
+xoom,funds_in,Bank account,Bank Transfer
+xoom,funds_in,Credit card,Debit/Credit Card
+xoom,funds_in,Debit card,Debit/Credit Card
+xoom,funds_in,PayPal balance,PayPal
+xoom,funds_out,Bank Deposit,Bank Deposit
+xoom,funds_out,Cash Pickup,Cash Pick-Up
+xoom,speed,1 - 2 Business Days,Within 2 days
+xoom,speed,In Hours,Within 1 day
+xoom,speed,In Minutes,Within 1 day
+xoom,speed,Same Day,Within 1 day
+xoom,speed,Instant Transfer,Within 1 day
+xoom,speed,-,Within 2 days
+xoom,speed,,Within 2 days
+paypal,funds_in,bank,Bank Transfer
+paypal,funds_in,debit,Debit/Credit Card
+paypal,funds_in,card,Debit/Credit Card
+westernunion,funds_in,ACH,Bank Transfer
+westernunion,funds_in,CreditCard,Credit Card
+westernunion,funds_in,DebitCard,Debit Card

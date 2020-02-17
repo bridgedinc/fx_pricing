@@ -1,0 +1,7 @@
+.ttf|
+.ttf?o6tzgv|
+.woff|
+.woff2|
+.woff2?vk680e|
+.css|
+.svg|

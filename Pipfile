@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+scrapy = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+scrapy-djangoitem = "*"
+celery = "*"
+redis = "*"
+django-bootstrap4 = "*"
+ipython = "*"
+python-anticaptcha = "*"
+scrapy-inline-requests = "*"
+stem = "*"
+pysocks = "*"
+
+[requires]
+python_version = "3.7"

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+
+{% block html_class %}h-100{% endblock %}
+{% block body_class %}d-flex flex-column h-100 text-center{% endblock %}
+
+{% block content %}
+  <div class="jumbotron w-100" style="margin: auto; max-width: 330px;">
+    <h1 class="mb-5">Bridged</h1>
+    <form class="form" action="{% url "login" %}" method="post">
+      {% csrf_token %}
+      {% bootstrap_form_errors form layout="inline" %}
+      {% bootstrap_field form.username show_label=False placeholder=form.username.label %}
+      {% bootstrap_field form.password show_label=False placeholder=form.password.label %}
+      {% buttons %}
+        <button type="submit" class="btn btn-primary btn-block">
+          Sign in
+        </button>
+      {% endbuttons %}
+    </form>
+  </div>
+{% endblock %}

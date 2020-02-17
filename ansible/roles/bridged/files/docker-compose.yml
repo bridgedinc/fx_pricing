@@ -1,0 +1,163 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:10.4-alpine
+    hostname: postgres
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    env_file:
+      - .env
+    ports:
+      - 5432:5432
+    volumes:
+      - data:/var/lib/postgresql/data
+
+  django:
+    image: registry.antonskvortsov.com/bridged:latest
+    restart: always
+    depends_on:
+      - postgres
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    env_file:
+      - .env
+    ports:
+      - 127.0.0.1:8000:8000
+    volumes:
+      - static:/bridged/static
+      - ./results:/bridged/results
+
+  nginx:
+    image: umputun/nginx-le:latest
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    environment:
+      - TZ=Europe/Moscow
+      - LETSENCRYPT=true
+      - LE_EMAIL=askvrtsv@icloud.com
+      - LE_FQDN=bridged.antonskvortsov.com
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./ssl:/etc/nginx/ssl
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx-bridged.conf:/etc/nginx/service-bridged.conf
+      - static:/var/www/static
+    depends_on:
+      - django
+
+  redis:
+    image: redis:alpine
+    hostname: redis
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    ports:
+      - 127.0.0.1:6379:6379
+
+  celery_worker:
+    image: registry.antonskvortsov.com/bridged:latest
+    restart: always
+    command: celery -A bridged worker -l info --max-tasks-per-child 1
+    depends_on:
+      - redis
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/bridged/logs
+      - ./results:/bridged/results
+    extra_hosts:
+      - "consumerapi.moneygram.com:104.244.238.135"
+
+  celery_beat:
+    image: registry.antonskvortsov.com/bridged:latest
+    restart: always
+    command: celery -A bridged beat -l info
+    depends_on:
+      - redis
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '5'
+    env_file:
+      - .env
+
+  splash:
+    image: scrapinghub/splash:latest
+    command: --max-timeout 3600 --slots 1 --maxrss 700 --verbosity 3 --disable-private-mode --filters-path=/etc/splash/filters
+    ports:
+      - 127.0.0.1:8050:8050
+    mem_limit: 1200m
+    restart: always
+    volumes:
+      - ./filters:/etc/splash/filters:ro
+    depends_on:
+      - pproxy1
+      - pproxy2
+
+  tor1:
+    image: peterdavehello/tor-socks-proxy:latest
+    restart: always
+    volumes:
+      - ./torrc:/etc/tor/torrc
+    expose:
+      - 9050
+    ports:
+      - 127.0.0.1:9151:9150
+
+  pproxy1:
+    image: mosajjal/pproxy:latest
+    restart: always
+    command: -r socks5://tor1:9150 -s rr -v
+    expose:
+      - 8080
+    ports:
+      - 127.0.0.1:8181:8080
+    depends_on:
+      - tor1
+
+  tor2:
+    image: peterdavehello/tor-socks-proxy:latest
+    restart: always
+    volumes:
+      - ./torrc:/etc/tor/torrc
+    expose:
+      - 9050
+    ports:
+      - 127.0.0.1:9152:9150
+
+  pproxy2:
+    image: mosajjal/pproxy:latest
+    restart: always
+    command: -r socks5://tor2:9150 -s rr -v
+    expose:
+      - 8080
+    ports:
+      - 127.0.0.1:8182:8080
+    depends_on:
+      - tor2
+
+volumes:
+  data:
+  static:

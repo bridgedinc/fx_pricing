@@ -1,0 +1,22 @@
+- file:
+    state: directory
+    path: /srv/docker/bridged
+    mode: 0750
+
+- docker_compose:
+    state: absent
+    project_src: /srv/docker/bridged
+    ignore_errors: yes
+
+- docker_image:
+    name: registry.antonskvortsov.com/bridged
+    force_source: yes
+    source: pull
+
+- copy:
+    src: .
+    dest: /srv/docker/bridged/
+
+- docker_compose:
+    state: present
+    project_src: /srv/docker/bridged

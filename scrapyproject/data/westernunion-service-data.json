@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "security": {
+    "session": {
+      "id": ""
+    },
+    "client_ip": ""
+  },
+  "external_reference_no": "1",
+  "origination_channels": {
+    "channel": [
+      {
+        "name": "Western Union",
+        "type": "WEB",
+        "version": "9Z00"
+      }
+    ]
+  },
+  "sender": {
+    "address": {
+      "postal_code": "94107",
+      "country_iso_code": "US"
+    }
+  },
+  "reference_location": {
+    "address": {
+      "postal_code": "94107",
+      "country_iso_code": "US"
+    }
+  },
+  "payment_details": {
+    "origination": {
+      "country_iso_code": "US",
+      "currency_iso_code": "USD",
+      "principal_amount": "400.00"
+    },
+    "destination": {
+      "country_iso_code": "US",
+      "currency_iso_code": "USD"
+    },
+    "payment_type": "ALL"
+  },
+  "inquiry_type": "MONEY_TRANSFER_FEE",
+  "inquiry_accuracy": "EXACT",
+  "bashPath": "/us/en"
+}

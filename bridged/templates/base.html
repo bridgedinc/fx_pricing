@@ -1,0 +1,16 @@
+{% load bootstrap4 static %}<!DOCTYPE html>
+<html lang="{% block html_language_code %}en{% endblock %}" class="{% block html_class %}{% endblock %}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>{% block title %}{% endblock %}</title>
+    {% block head_extra %}{% endblock %}
+  </head>
+  <body class="{% block body_class %}{% endblock %}">
+    {% block header %}{% endblock %}
+    {% block content %}{% endblock %}
+    {% block body_extra %}{% endblock body_extra %}
+  </body>
+</html>

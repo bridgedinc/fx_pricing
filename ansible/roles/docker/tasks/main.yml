@@ -1,0 +1,37 @@
+- apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+      - python3-pip
+      - build-essential
+      - libssl-dev
+      - libffi-dev
+      - python-dev
+    update_cache: yes
+
+- shell: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+  args:
+    warn: false
+
+- apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable
+
+- apt:
+    name: docker-ce
+    update_cache: yes
+
+- get_url:
+    url: https://github.com/docker/compose/releases/download/1.21.2/docker-compose-Linux-x86_64
+    dest: /usr/local/bin/docker-compose
+    mode: 0755
+
+- pip:
+    name: docker-compose
+
+- file:
+    state: directory
+    path: /srv/docker
+    owner: root
+    mode: 0750

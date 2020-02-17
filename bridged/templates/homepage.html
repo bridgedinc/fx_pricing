@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block header %}
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'homepage' %}">Bridged</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"></ul>
+      <span class="nav-text mr-2">{{ user.email }}</span>
+      {% if user.is_staff %}
+        <a class="nav-link pl-0" href="{% url 'admin:index' %}">Settings</a>
+      {% endif %}
+      <a class="nav-link pl-0" href="{% url 'logout' %}">Logout</a>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <div class="row mb-4 pb-4 border-bottom">
+      <a class="btn btn-primary" href="{% url 'run_scraping' %}">Run scraping</a>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="nav nav-tabs mb-3">
+          <li class="nav-item">
+            <a class="nav-link {% if set == "today" %}active{% endif %}" href="{% url 'homepage' %}">Today</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if set == "archive" %}active{% endif %}" href="{% url 'archive' %}">Archive</a>
+          </li>
+        </ul>
+        {% if jobs %}
+          <ul class="list-group">
+            {% for job in jobs %}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>
+                  {{ job.started_at }}
+                  {% if set == "today" %}
+                    <br>
+                    <small class="text-muted">
+                      <span class="mr-2">Duration: {{ job.duration }}</span>
+                      <span>{{ job.items.count }} items</span>
+                    </small>
+                  {% endif %}
+                </span>
+                {% if job.is_inprogress %}
+                  <span>Generating...</span>
+                {% else %}
+                  <div class="btn-group">
+                    <a class="btn btn-light" href="{% url 'download_csv' job.id  %}" role="button">All companies</a>
+                    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      {% for scraper in scrapers %}
+                        <a class="dropdown-item" href="{% url 'download_csv' job.id %}?scraper={{ scraper.id }}">{{ scraper.name }}</a>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

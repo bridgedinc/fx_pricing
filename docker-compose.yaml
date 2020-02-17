@@ -1,0 +1,100 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres:10.4-alpine
+    hostname: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=bridged
+      - POSTGRES_PASSWORD=dbadmin12_
+    ports:
+      - 127.0.0.1:5432:5432
+    volumes:
+      - data:/var/lib/postgresql/data
+
+  django:
+    image: registry.antonskvortsov.com/bridged
+    command: python manage.py runserver 0:8000
+    tty: true
+    depends_on:
+      - postgres
+    environment:
+      DJANGO_SETTINGS_MODULE: bridged.settings_dev
+      POSTGRES_PASSWORD: dbadmin12_
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/bridged
+    extra_hosts:
+      - "consumerapi.moneygram.com:104.244.238.135"
+
+  redis:
+    image: redis:alpine
+    hostname: redis
+    ports:
+      - 127.0.0.1:6379:6379
+
+  celery_worker:
+    image: registry.antonskvortsov.com/bridged:latest
+    command: celery -A bridged worker -l info --max-tasks-per-child 1
+    depends_on:
+      - redis
+    environment:
+      - DJANGO_SETTINGS_MODULE=bridged.settings_dev
+      - POSTGRES_PASSWORD=dbadmin12_
+    volumes:
+      - .:/bridged
+    extra_hosts:
+      - "consumerapi.moneygram.com:104.244.238.135"
+
+#  celery_beat:
+#    image: registry.antonskvortsov.com/bridged:latest
+#    command: celery -A bridged beat -l info
+#    depends_on:
+#      - redis
+#    environment:
+#      - DJANGO_SETTINGS_MODULE=bridged.settings_dev
+#      - POSTGRES_PASSWORD=dbadmin12_
+#    volumes:
+#      - .:/bridged
+
+  splash:
+    image: scrapinghub/splash:latest
+    command: --max-timeout 3600 --slots 1 --maxrss 800 --verbosity 3 --disable-private-mode --filters-path=/etc/splash/filters
+    ports:
+      - 127.0.0.1:8050:8050
+    mem_limit: 1280m
+    restart: always
+    volumes:
+      - ./ansible/roles/bridged/files/filters:/etc/splash/filters:ro
+    depends_on:
+      - pproxy1
+    dns:
+      - 8.8.8.8
+
+  tor1:
+    image: peterdavehello/tor-socks-proxy:latest
+    restart: always
+    volumes:
+      - ./ansible/roles/bridged/files/torrc:/etc/tor/torrc
+    expose:
+      - 9050
+    ports:
+      - 127.0.0.1:9050:9050
+    dns:
+      - 8.8.8.8
+
+  pproxy1:
+    image: mosajjal/pproxy:latest
+    restart: always
+    command: -r socks5://tor1:9050 -v
+    expose:
+      - 8080
+    ports:
+      - 127.0.0.1:8080:8080
+    depends_on:
+      - tor1
+
+volumes:
+  data:

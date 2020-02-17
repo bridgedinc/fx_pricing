@@ -1,0 +1,64 @@
+{
+  "security": {
+    "session": {
+      "id": ""
+    },
+    "client_ip": ""
+  },
+  "external_reference_no": "1",
+  "sender": {
+    "address": {
+      "postal_code": "94107",
+      "country_iso_code": "US"
+    },
+    "preferred_customer": {
+      "account_nbr": null
+    }
+  },
+  "inquiry_type": "MONEY_TRANSFER_FEE",
+  "inquiry_accuracy": "ESTIMATED",
+  "origination_channels": {
+    "channel": [
+      {
+        "name": "MOB",
+        "type": "RETAIL_MOBILE",
+        "version": "9D01",
+        "device_identifier": "RESPONSIVE_WEB",
+        "is_responsive": "true"
+      }
+    ]
+  },
+  "reference_location": {
+    "address": {
+      "postal_code": "94107",
+      "country_iso_code": "US"
+    }
+  },
+  "payment_details": {
+    "origination": {
+      "country_iso_code": "US",
+      "currency_iso_code": "USD",
+      "efl": {
+        "address": {
+          "country_iso_code": "NL",
+          "state": "CA",
+          "postal_code": "94107"
+        }
+      },
+      "principal_amount": "400.00"
+    },
+    "destination": {
+      "country_iso_code": "US",
+      "currency_iso_code": "USD"
+    },
+    "payment_type": "ALL"
+  },
+  "bashPath": "/us/en",
+  "channel": {
+    "name": "MOB",
+    "type": "RETAIL_MOBILE",
+    "version": "9D01",
+    "device_identifier": "RESPONSIVE_WEB",
+    "is_responsive": "true"
+  }
+}
