@@ -9,7 +9,7 @@
     ignore_errors: yes
 
 - docker_image:
-    name: registry.antonskvortsov.com/bridged
+    name: bridgedinc/fx-pricing:latest
     force_source: yes
     source: pull
 

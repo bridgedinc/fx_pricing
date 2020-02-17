@@ -1,9 +1,9 @@
 build:
 	pipenv run pip freeze > requirements.txt
-	docker build -t registry.antonskvortsov.com/bridged .
+	docker build -t bridgedinc/fx-pricing .
 
 push: build
-	docker push registry.antonskvortsov.com/bridged
+	docker push bridgedinc/fx-pricing
 
 deploy: push
 	ansible-playbook -i ansible/hosts_test.yml ansible/site.yml -t bridged

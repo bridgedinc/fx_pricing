@@ -14,7 +14,7 @@ services:
       - data:/var/lib/postgresql/data
 
   django:
-    image: registry.antonskvortsov.com/bridged
+    image: bridgedinc/fx-pricing:latest 
     command: python manage.py runserver 0:8000
     tty: true
     depends_on:
@@ -36,7 +36,7 @@ services:
       - 127.0.0.1:6379:6379
 
   celery_worker:
-    image: registry.antonskvortsov.com/bridged:latest
+    image: bridgedinc/fx-pricing:latest
     command: celery -A bridged worker -l info --max-tasks-per-child 1
     depends_on:
       - redis
@@ -49,7 +49,7 @@ services:
       - "consumerapi.moneygram.com:104.244.238.135"
 
 #  celery_beat:
-#    image: registry.antonskvortsov.com/bridged:latest
+#    image: bridgedinc/fx-pricing:latest
 #    command: celery -A bridged beat -l info
 #    depends_on:
 #      - redis
